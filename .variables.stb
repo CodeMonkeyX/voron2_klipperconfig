@@ -1,4 +1,4 @@
 [Variables]
-plate_array = [('TL_Textured', -0.04), ('WB_Textured', 1.0), ('WB_PEI', 1.0)]
+plate_array = [('TL_Textured', -0.33), ('WB_Textured', 1.0), ('WB_PEI', 1.0)]
 plate_index = 0
 
