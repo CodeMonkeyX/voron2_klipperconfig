@@ -58,7 +58,7 @@ camera="raspi"
 # Defaults to 10fps
 #
 #camera_raspi_options="-r 1920x1080 -fps 30"
-camera_raspi_options="-x 1280 -y 960 -fps 30"
+camera_raspi_options="-x 1280 -y 960 -fps 15 -awb auto -mm spot -ex backlight"
 
 ### Configuration of camera HTTP output
 #
