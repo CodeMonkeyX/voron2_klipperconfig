@@ -14,8 +14,7 @@
 # Defaults to auto
 #
 #camera="auto"
-camera="raspi"
-#camera="usb"
+camera="usb"
 
 ### Additional options to supply to MJPG Streamer for the USB camera
 #
@@ -25,6 +24,8 @@ camera="raspi"
 #
 #camera_usb_options="-r 640x480 -f 10"
 #camera_usb_options="-r 1920x1080 -f 30"
+#camera_usb_options="-r 1600x1200 -f 15"
+camera_usb_options="-r 2595x1944 -f 15 -bk 10 -sa 50 -co 20 -sh 1"
 
 ### Additional webcam devices known to cause problems with -f
 #
@@ -59,8 +60,7 @@ camera="raspi"
 # Defaults to 10fps
 #
 #camera_raspi_options="-r 1920x1080 -fps 30"
-#camera_raspi_options="-x 1280 -y 960 -fps 10 -wb auto -ex auto"
-camera_raspi_options="-x 1280 -y 960 -fps 15"
+#camera_raspi_options="-x 1280 -y 960 -fps 10 -awb auto -mm spot -ex backlight"
 
 ### Configuration of camera HTTP output
 #
@@ -74,7 +74,7 @@ camera_raspi_options="-x 1280 -y 960 -fps 15"
 # Current working directory is the mjpg-streamer base directory.
 #
 #camera_http_webroot="./www-fluidd"
-#camera_http_options="-n"
+camera_http_options="-n -p 8081"
 
 ### EXPERIMENTAL
 # Support for different streamer types.
